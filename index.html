@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tanya Bekai — Aesthetics Clinic</title>
+  <meta name="description" content="Facials, skin treatments and injectables with Tanya Bekai. Book a consultation and get your appointment confirmed on WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..500,100&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top">Tanya Bekai</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#treatments">Treatments</a></li>
+        <li><a href="#visit">Your visit</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-small" href="#book">Book a consultation</a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <h1>
+          <span class="line">Skin care that</span>
+          <span class="line">starts with</span>
+          <span class="line">listening.</span>
+        </h1>
+        <p class="lede">Every treatment at Tanya's clinic begins with a conversation about your skin, your routine and what you'd like to change. Then we make a plan together — no upselling, no rush.</p>
+      </div>
+
+      <form class="booking" id="book" aria-labelledby="book-title" novalidate>
+        <h2 id="book-title">Book a consultation</h2>
+        <p class="booking-note">Pick a treatment and a time that suits you. We'll confirm your appointment on WhatsApp.</p>
+
+        <label for="f-treatment">Treatment</label>
+        <select id="f-treatment" name="treatment" required>
+          <option value="">Not sure yet — help me choose</option>
+          <option>Signature facial</option>
+          <option>Chemical peel</option>
+          <option>Microneedling</option>
+          <option>LED light therapy</option>
+          <option>Anti-wrinkle injections</option>
+          <option>Dermal fillers</option>
+        </select>
+
+        <div class="row">
+          <div>
+            <label for="f-date">Day</label>
+            <input id="f-date" name="date" type="date" required>
+          </div>
+          <div>
+            <label for="f-time">Time</label>
+            <select id="f-time" name="time" required>
+              <option value="">Choose</option>
+              <option>Morning</option>
+              <option>Afternoon</option>
+              <option>Evening</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="f-name">Your name</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required>
+
+        <p class="form-error" id="form-error" role="alert" hidden></p>
+        <button class="btn" type="submit">Send request on WhatsApp</button>
+      </form>
+    </section>
+
+    <section class="treatments" id="treatments" aria-labelledby="treatments-title">
+      <div class="section-head">
+        <h2 id="treatments-title">Treatments</h2>
+        <p>Open a treatment to see what it helps with and how long it takes. Prices are confirmed at your consultation, once we know what your skin needs.</p>
+      </div>
+
+      <!-- Treatment list and durations are placeholders: replace with the clinic's real menu. -->
+      <ul class="menu">
+        <li>
+          <details>
+            <summary>
+              <span class="t-name">Signature facial</span>
+              <span class="t-what">Deep cleanse, gentle exfoliation and hydration</span>
+              <span class="t-time">60 min</span>
+            </summary>
+            <div class="t-body">
+              <p>A calm, thorough facial adapted to your skin on the day. A good first treatment if you're new to the clinic.</p>
+              <ul><li>Clears congested pores</li><li>Restores moisture and glow</li><li>No downtime</li></ul>
+            </div>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>
+              <span class="t-name">Chemical peel</span>
+              <span class="t-what">Resurfaces dull, uneven or marked skin</span>
+              <span class="t-time">45 min</span>
+            </summary>
+            <div class="t-body">
+              <p>A controlled exfoliation that removes damaged surface cells so fresher skin can come through. Strength is chosen for your skin type.</p>
+              <ul><li>Evens pigmentation and tone</li><li>Softens fine lines and acne marks</li><li>Light flaking for a few days</li></ul>
+            </div>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>
+              <span class="t-name">Microneedling</span>
+              <span class="t-what">Encourages collagen to firm and smooth skin</span>
+              <span class="t-time">60 min</span>
+            </summary>
+            <div class="t-body">
+              <p>Fine needles create tiny channels in the skin, prompting it to repair and rebuild collagen. Usually done as a course of three.</p>
+              <ul><li>Improves texture and scarring</li><li>Reduces the look of pores</li><li>Redness for 24–48 hours</li></ul>
+            </div>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>
+              <span class="t-name">LED light therapy</span>
+              <span class="t-what">Calms inflammation and supports healing</span>
+              <span class="t-time">30 min</span>
+            </summary>
+            <div class="t-body">
+              <p>Painless light treatment that works well on its own or straight after a peel or microneedling.</p>
+              <ul><li>Soothes redness and breakouts</li><li>Speeds up recovery</li><li>No downtime</li></ul>
+            </div>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>
+              <span class="t-name">Anti-wrinkle injections</span>
+              <span class="t-what">Softens expression lines on the forehead and eyes</span>
+              <span class="t-time">30 min</span>
+            </summary>
+            <div class="t-body">
+              <p>Small, precise doses that relax the muscles behind expression lines. The aim is for you to look rested, not frozen.</p>
+              <ul><li>Results appear over 7–14 days</li><li>Lasts around 3–4 months</li><li>Review appointment included</li></ul>
+            </div>
+          </details>
+        </li>
+        <li>
+          <details>
+            <summary>
+              <span class="t-name">Dermal fillers</span>
+              <span class="t-what">Restores volume to lips, cheeks and jawline</span>
+              <span class="t-time">45 min</span>
+            </summary>
+            <div class="t-body">
+              <p>Hyaluronic acid filler placed to balance proportions and replace lost volume. Always discussed in detail before we begin.</p>
+              <ul><li>Immediate, natural-looking results</li><li>Lasts 6–12 months depending on area</li><li>Possible swelling for a few days</li></ul>
+            </div>
+          </details>
+        </li>
+      </ul>
+    </section>
+
+    <section class="visit" id="visit" aria-labelledby="visit-title">
+      <h2 id="visit-title">Your visit</h2>
+      <ol class="steps">
+        <li>
+          <h3>Consultation</h3>
+          <p>We talk about your skin, health and goals, and look closely at what's going on.</p>
+        </li>
+        <li>
+          <h3>A plan for you</h3>
+          <p>Tanya recommends treatments, explains what to expect and confirms the price. You decide.</p>
+        </li>
+        <li>
+          <h3>Treatment</h3>
+          <p>Done in a quiet private room, at your pace, with every step explained.</p>
+        </li>
+        <li>
+          <h3>Aftercare</h3>
+          <p>You leave with written aftercare and can message us on WhatsApp with any questions.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PLACEHOLDER REVIEWS: replace with real client reviews (with their permission) before going live. -->
+    <section class="reviews" id="reviews" aria-labelledby="reviews-title">
+      <h2 id="reviews-title">What clients say</h2>
+      <figure class="review review-lead">
+        <blockquote><p>“I came in nervous about injections and left feeling completely looked after. Tanya talked me out of half of what I thought I wanted, and I'm so glad she did.”</p></blockquote>
+        <figcaption>Client name, anti-wrinkle injections</figcaption>
+      </figure>
+      <figure class="review">
+        <blockquote><p>“My skin hasn't looked this even in years. The peel course was explained so clearly.”</p></blockquote>
+        <figcaption>Client name, chemical peel</figcaption>
+      </figure>
+      <figure class="review">
+        <blockquote><p>“Booking on WhatsApp was easy and the clinic is beautifully calm.”</p></blockquote>
+        <figcaption>Client name, signature facial</figcaption>
+      </figure>
+    </section>
+
+    <!-- Contact details are placeholders: replace address, hours and phone. -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Visit the clinic</h2>
+      <div class="contact-grid">
+        <div>
+          <h3>Address</h3>
+          <address>Clinic street 1<br>City, postcode</address>
+          <a href="https://maps.google.com/?q=Tanya+Bekai+Clinic" target="_blank" rel="noopener">Open in Google Maps</a>
+        </div>
+        <div>
+          <h3>Opening hours</h3>
+          <dl class="hours">
+            <dt>Monday to Thursday</dt><dd>9:00–19:00</dd>
+            <dt>Friday</dt><dd>9:00–14:00</dd>
+            <dt>Saturday and Sunday</dt><dd>Closed</dd>
+          </dl>
+        </div>
+        <div>
+          <h3>Get in touch</h3>
+          <p><a href="tel:+10000000000">+1 000 000 0000</a></p>
+          <p><a class="js-whatsapp" href="https://wa.me/10000000000" target="_blank" rel="noopener">Message us on WhatsApp</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="wordmark">Tanya Bekai</p>
+    <p>© <span id="year">2026</span> Tanya Bekai Aesthetics. All treatments are carried out after a consultation.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
