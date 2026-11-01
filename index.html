@@ -1,240 +1,469 @@
 <!doctype html>
-<html lang="en">
+<html lang="he" dir="rtl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tanya Bekai — Aesthetics Clinic</title>
-  <meta name="description" content="Facials, skin treatments and injectables with Tanya Bekai. Book a consultation and get your appointment confirmed on WhatsApp.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>TB Cosmetology | טניה בקאי – קוסמטיקאית מוסמכת בנתניה</title>
+  <meta name="description" content="קליניקה פרטית לטיפולי עור וקוסמטיקה מתקדמת בשכונת אגמים, נתניה. טיפולי אקנה, פוסט אקנה, פיגמנטציה, אנטי אייג'ינג וטיפולי פנים בהתאמה אישית. לקביעת פגישת ייעוץ: 054-682-4499.">
+  <meta name="theme-color" content="#4A3426">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:title" content="TB Cosmetology | טניה בקאי">
+  <meta property="og:description" content="העור שלך. הביטחון שלך. התוצאה שלך. קליניקה פרטית לטיפולי עור בנתניה.">
+  <meta property="og:image" content="assets/images/tanya-clinic-1320.jpg">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..500,100&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600&family=Bellefair&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" type="image/webp" href="assets/images/tanya-clinic-720.webp" imagesrcset="assets/images/tanya-clinic-720.webp 720w, assets/images/tanya-clinic-1320.webp 1320w" imagesizes="(min-width: 960px) 55vw, 100vw">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "TB Cosmetology – טניה בקאי",
+    "description": "קליניקה פרטית לטיפולי עור וקוסמטיקה מתקדמת",
+    "telephone": "+972-54-682-4499",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "שדרות האגמים 11",
+      "addressLocality": "נתניה",
+      "addressCountry": "IL"
+    },
+    "sameAs": ["https://www.instagram.com/tb.cosmetology/"]
+  }
+  </script>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+  <a class="skip" href="#main">דילוג לתוכן</a>
 
-  <header class="site-header">
-    <a class="wordmark" href="#top">Tanya Bekai</a>
-    <nav aria-label="Main">
+  <header class="site-header" id="site-header">
+    <a class="lockup" href="#top" aria-label="TB Cosmetology – לראש העמוד">
+      <span class="lockup-main">TB COSMETOLOGY</span>
+      <span class="lockup-sub">TANYA BAKAI</span>
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="ניווט ראשי">
       <ul>
-        <li><a href="#treatments">Treatments</a></li>
-        <li><a href="#visit">Your visit</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">אודות</a></li>
+        <li><a href="#treatments">טיפולים</a></li>
+        <li><a href="#results">תוצאות</a></li>
+        <li><a href="#gallery">הקליניקה</a></li>
+        <li><a href="#contact">יצירת קשר</a></li>
       </ul>
+      <a class="btn btn-gold nav-cta" href="#booking">לקביעת פגישת ייעוץ</a>
     </nav>
-    <a class="btn btn-small" href="#book">Book a consultation</a>
+
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="menu-icon" aria-hidden="true"></span>
+      <span class="sr-only">תפריט</span>
+    </button>
   </header>
 
   <main id="main">
+    <!-- HERO -->
     <section class="hero" id="top">
-      <div class="hero-copy">
+      <picture class="hero-media">
+        <source type="image/webp" srcset="assets/images/tanya-clinic-720.webp 720w, assets/images/tanya-clinic-1320.webp 1320w" sizes="(min-width: 960px) 55vw, 100vw">
+        <img src="assets/images/tanya-clinic-1320.jpg" alt="טניה בקאי, קוסמטיקאית מוסמכת, בקליניקה שלה בנתניה" width="1320" height="1311" fetchpriority="high">
+      </picture>
+
+      <div class="hero-content">
+        <p class="hero-brand">TB COSMETOLOGY <span>TANYA BAKAI</span></p>
         <h1>
-          <span class="line">Skin care that</span>
-          <span class="line">starts with</span>
-          <span class="line">listening.</span>
+          <span>העור שלך.</span>
+          <span>הביטחון שלך.</span>
+          <span>התוצאה שלך.</span>
         </h1>
-        <p class="lede">Every treatment at Tanya's clinic begins with a conversation about your skin, your routine and what you'd like to change. Then we make a plan together — no upselling, no rush.</p>
-      </div>
-
-      <form class="booking" id="book" aria-labelledby="book-title" novalidate>
-        <h2 id="book-title">Book a consultation</h2>
-        <p class="booking-note">Pick a treatment and a time that suits you. We'll confirm your appointment on WhatsApp.</p>
-
-        <label for="f-treatment">Treatment</label>
-        <select id="f-treatment" name="treatment" required>
-          <option value="">Not sure yet — help me choose</option>
-          <option>Signature facial</option>
-          <option>Chemical peel</option>
-          <option>Microneedling</option>
-          <option>LED light therapy</option>
-          <option>Anti-wrinkle injections</option>
-          <option>Dermal fillers</option>
-        </select>
-
-        <div class="row">
-          <div>
-            <label for="f-date">Day</label>
-            <input id="f-date" name="date" type="date" required>
-          </div>
-          <div>
-            <label for="f-time">Time</label>
-            <select id="f-time" name="time" required>
-              <option value="">Choose</option>
-              <option>Morning</option>
-              <option>Afternoon</option>
-              <option>Evening</option>
-            </select>
-          </div>
+        <p class="hero-text">כל עור מספר סיפור. בקליניקה שלי נתאים לך תוכנית טיפולים אישית שתעזור לך להגיע לעור בריא, מאוזן וזוהר.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#booking">לקביעת פגישת ייעוץ</a>
+          <a class="btn btn-ghost" href="#treatments">להיכרות עם הטיפולים</a>
         </div>
-
-        <label for="f-name">Your name</label>
-        <input id="f-name" name="name" type="text" autocomplete="name" required>
-
-        <p class="form-error" id="form-error" role="alert" hidden></p>
-        <button class="btn" type="submit">Send request on WhatsApp</button>
-      </form>
+        <p class="hero-place">קליניקה פרטית בשכונת אגמים, נתניה</p>
+      </div>
     </section>
 
-    <section class="treatments" id="treatments" aria-labelledby="treatments-title">
-      <div class="section-head">
-        <h2 id="treatments-title">Treatments</h2>
-        <p>Open a treatment to see what it helps with and how long it takes. Prices are confirmed at your consultation, once we know what your skin needs.</p>
+    <!-- Treatment-names strip -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>טיפולי אקנה</span><span>פוסט אקנה</span><span>פיגמנטציה</span><span>אנטי אייג'ינג</span><span>טיפולי פנים</span><span>אבחון עור</span>
+        <span>טיפולי אקנה</span><span>פוסט אקנה</span><span>פיגמנטציה</span><span>אנטי אייג'ינג</span><span>טיפולי פנים</span><span>אבחון עור</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="about-grid">
+        <figure class="about-photo">
+          <picture>
+            <source type="image/webp" srcset="assets/images/treatment-facial-720.webp 720w, assets/images/treatment-facial-1320.webp 1306w" sizes="(min-width: 960px) 40vw, 100vw">
+            <img src="assets/images/treatment-facial-720.jpg" alt="טניה מבצעת טיפול פנים ללקוחה בקליניקה" width="1306" height="1440" loading="lazy">
+          </picture>
+        </figure>
+
+        <div class="about-text">
+          <h2 id="about-title">נעים להכיר, אני טניה</h2>
+          <p>אני טניה בקאי, קוסמטיקאית מוסמכת המתמחה בבעיות עור ובטיפולי קוסמטיקה ואסתטיקה מתקדמים.</p>
+          <p>אני מאמינה שטיפול טוב מתחיל באבחון מקצועי: להבין מה העור שלך צריך, להכיר את השגרה שלך ולהקשיב למה שחשוב לך. רק אחרי זה אני בונה איתך תוכנית טיפולים שמתאימה בדיוק למצב העור שלך.</p>
+          <p>הקליניקה שלי בשכונת אגמים בנתניה היא מקום פרטי, רגוע ואינטימי. כל טיפול נעשה ביחס אישי, בשקט ובלי למהר, ואני מלווה אותך לאורך כל התהליך.</p>
+          <p class="signature" lang="en" aria-hidden="true">Tanya Bakai</p>
+        </div>
       </div>
 
-      <!-- Treatment list and durations are placeholders: replace with the clinic's real menu. -->
-      <ul class="menu">
-        <li>
-          <details>
-            <summary>
-              <span class="t-name">Signature facial</span>
-              <span class="t-what">Deep cleanse, gentle exfoliation and hydration</span>
-              <span class="t-time">60 min</span>
-            </summary>
-            <div class="t-body">
-              <p>A calm, thorough facial adapted to your skin on the day. A good first treatment if you're new to the clinic.</p>
-              <ul><li>Clears congested pores</li><li>Restores moisture and glow</li><li>No downtime</li></ul>
+      <div class="approach">
+        <h3 class="approach-title">איך זה עובד אצלי</h3>
+        <ol class="approach-steps">
+          <li><strong>אבחון מצב העור</strong><span>פגישת ייעוץ שבה נבדוק יחד את העור ונדבר על הצרכים שלך.</span></li>
+          <li><strong>תוכנית טיפולים אישית</strong><span>התאמת סוג הטיפולים, הקצב והטיפוח בבית למצב העור שלך.</span></li>
+          <li><strong>טיפולים בקליניקה</strong><span>שימוש בטכנולוגיות מתקדמות ובחומרים מקצועיים ואיכותיים.</span></li>
+          <li><strong>ליווי לאורך הדרך</strong><span>מעקב אחרי התגובה של העור ועדכון התוכנית לפי הצורך.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TREATMENTS -->
+    <section class="treatments section" id="treatments" aria-labelledby="treatments-title">
+      <div class="section-intro">
+        <h2 id="treatments-title">הטיפולים בקליניקה</h2>
+        <p>כל טיפול מתחיל בפגישת ייעוץ ואבחון. כך נדע מה באמת מתאים לעור שלך, כמה מפגשים נדרשים ומה העלות.</p>
+      </div>
+
+      <!-- TODO: to add a photo to a card, put an <img> inside .card-media and remove the no-media class. -->
+      <div class="cards">
+        <article class="card no-media" data-topic="acne">
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h3>טיפול באקנה</h3>
+            <p>טיפול בעור הנוטה לפצעונים, שמתחיל באבחון מצב העור וממשיך בתוכנית טיפול אישית שמותאמת אלייך.</p>
+            <p class="card-for"><span>מתאים ל:</span> עור עם פצעונים, גודש או דלקתיות, בגיל ההתבגרות ובבגרות.</p>
+            <div class="card-actions">
+              <button class="btn btn-line" type="button" data-details="acne">לפרטים נוספים</button>
+              <a class="btn btn-dark" href="#booking" data-book="acne">לקביעת ייעוץ</a>
             </div>
-          </details>
+          </div>
+          <template data-details-for="acne">
+            <p>אקנה הוא מצב עור שכיח שיכול להופיע בכל גיל. בפגישה הראשונה נבחן יחד את סוג העור, את סוג הפצעונים ואת שגרת הטיפוח שלך, ובהתאם נבנה תוכנית של טיפולים בקליניקה ושל טיפוח בבית.</p>
+            <p>טיפול באקנה הוא בדרך כלל תהליך שנמשך כמה מפגשים, ואני מלווה אותך לאורך כולו ומתאימה את התוכנית לפי התגובה של העור.</p>
+          </template>
+        </article>
+
+        <article class="card no-media" data-topic="post-acne">
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h3>טיפול בפוסט אקנה</h3>
+            <p>טיפולים שמיועדים לשפר את מראה העור אחרי אקנה: סימנים, כתמים ומרקם לא אחיד.</p>
+            <p class="card-for"><span>מתאים ל:</span> מי שהאקנה הפעיל אצלה נרגע, ונשארו סימנים, כתמים או שינויים במרקם העור.</p>
+            <div class="card-actions">
+              <button class="btn btn-line" type="button" data-details="post-acne">לפרטים נוספים</button>
+              <a class="btn btn-dark" href="#booking" data-book="post-acne">לקביעת ייעוץ</a>
+            </div>
+          </div>
+          <template data-details-for="post-acne">
+            <p>אחרי שהאקנה נרגע, פעמים רבות נשארים על העור סימנים: כתמים כהים או אדמדמים, שינויים במרקם וצלקות. דרך הטיפול נבחרת לפי סוג הסימנים ומצב העור.</p>
+            <p>בפגישת הייעוץ נבחן יחד את העור ונבנה תוכנית מותאמת, כולל המלצות לטיפוח ולהגנה בבית.</p>
+          </template>
+        </article>
+
+        <article class="card no-media" data-topic="pigmentation">
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h3>טיפול בפיגמנטציה</h3>
+            <p>התמקדות בשיפור המראה של כתמי פיגמנטציה ובאחידות גוון העור.</p>
+            <p class="card-for"><span>מתאים ל:</span> כתמי שמש, כתמים שנשארו אחרי דלקת בעור או גוון עור לא אחיד.</p>
+            <div class="card-actions">
+              <button class="btn btn-line" type="button" data-details="pigmentation">לפרטים נוספים</button>
+              <a class="btn btn-dark" href="#booking" data-book="pigmentation">לקביעת ייעוץ</a>
+            </div>
+          </div>
+          <template data-details-for="pigmentation">
+            <p>לפיגמנטציה יש סיבות שונות, ולכן חשוב קודם כול לאבחן את סוג הכתמים. לפי האבחון נבחר את הטיפול המתאים בקליניקה ואת שגרת הטיפוח בבית.</p>
+            <p>הגנה יומיומית מהשמש היא חלק חשוב מהתהליך, ונדבר עליה גם בפגישה.</p>
+          </template>
+        </article>
+
+        <article class="card no-media" data-topic="anti-aging">
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h3>טיפולי אנטי אייג'ינג</h3>
+            <p>טיפולים שמתמקדים במראה העור, בסימני הגיל, במרקם העור ובגמישות שלו.</p>
+            <p class="card-for"><span>מתאים ל:</span> מי שרוצה לטפל בקמטוטים, בעור עייף או בירידה בגמישות, או לשמור על העור לאורך זמן.</p>
+            <div class="card-actions">
+              <button class="btn btn-line" type="button" data-details="anti-aging">לפרטים נוספים</button>
+              <a class="btn btn-dark" href="#booking" data-book="anti-aging">לקביעת ייעוץ</a>
+            </div>
+          </div>
+          <template data-details-for="anti-aging">
+            <p>עם השנים העור משתנה: המרקם, הגמישות והזוהר. בפגישת הייעוץ נבדוק מה מטריד אותך ומה מצב העור, ונבנה תוכנית טיפולים שמתאימה לגיל, לאורח החיים ולמטרות שלך.</p>
+          </template>
+        </article>
+
+        <article class="card no-media" data-topic="facial">
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h3>טיפולי פנים וקוסמטיקה מתקדמת</h3>
+            <p>טיפולי פנים שמותאמים למצב העור ולצרכים האישיים שלך.</p>
+            <p class="card-for"><span>מתאים ל:</span> כל מי שרוצה עור נקי, רענן ומטופח, וגם כחלק מתוכנית טיפולים רחבה יותר.</p>
+            <div class="card-actions">
+              <button class="btn btn-line" type="button" data-details="facial">לפרטים נוספים</button>
+              <a class="btn btn-dark" href="#booking" data-book="facial">לקביעת ייעוץ</a>
+            </div>
+          </div>
+          <template data-details-for="facial">
+            <p>טיפול פנים בקליניקה נבנה לפי מה שהעור צריך באותו יום. אנחנו עובדות עם חומרים מקצועיים ואיכותיים ובקצב רגוע, בסביבה פרטית ושקטה.</p>
+          </template>
+        </article>
+      </div>
+      <!-- TODO: full treatment details (duration, number of sessions, aftercare) to be filled in from Tanya. -->
+    </section>
+
+    <!-- WHY -->
+    <section class="why section" aria-labelledby="why-title">
+      <h2 id="why-title">למה לבחור בטניה?</h2>
+      <ul class="why-list">
+        <li>
+          <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="18" cy="18" r="10"/><path d="M25.5 25.5 33 33"/><path d="M14 18h8M18 14v8"/></svg>
+          <h3>אבחון מקצועי והתאמה אישית</h3>
+          <p>כל תוכנית מתחילה בבדיקה של העור ובשיחה עלייך. אין תוכנית אחת שמתאימה לכולן.</p>
         </li>
         <li>
-          <details>
-            <summary>
-              <span class="t-name">Chemical peel</span>
-              <span class="t-what">Resurfaces dull, uneven or marked skin</span>
-              <span class="t-time">45 min</span>
-            </summary>
-            <div class="t-body">
-              <p>A controlled exfoliation that removes damaged surface cells so fresher skin can come through. Strength is chosen for your skin type.</p>
-              <ul><li>Evens pigmentation and tone</li><li>Softens fine lines and acne marks</li><li>Light flaking for a few days</li></ul>
-            </div>
-          </details>
+          <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 33s-11-6.6-11-14.3A6 6 0 0 1 20 15a6 6 0 0 1 11 3.7C31 26.4 20 33 20 33Z"/></svg>
+          <h3>ליווי אישי</h3>
+          <p>אני מלווה אותך לאורך כל התהליך, עוקבת אחרי ההתקדמות ומעדכנת את התוכנית לפי הצורך.</p>
         </li>
         <li>
-          <details>
-            <summary>
-              <span class="t-name">Microneedling</span>
-              <span class="t-what">Encourages collagen to firm and smooth skin</span>
-              <span class="t-time">60 min</span>
-            </summary>
-            <div class="t-body">
-              <p>Fine needles create tiny channels in the skin, prompting it to repair and rebuild collagen. Usually done as a course of three.</p>
-              <ul><li>Improves texture and scarring</li><li>Reduces the look of pores</li><li>Redness for 24–48 hours</li></ul>
-            </div>
-          </details>
+          <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 6v6M20 28v6M6 20h6M28 20h6"/><circle cx="20" cy="20" r="5"/></svg>
+          <h3>טכנולוגיות וחומרים מקצועיים</h3>
+          <p>שימוש בטכנולוגיות מתקדמות ובחומרים מקצועיים ואיכותיים.</p>
         </li>
         <li>
-          <details>
-            <summary>
-              <span class="t-name">LED light therapy</span>
-              <span class="t-what">Calms inflammation and supports healing</span>
-              <span class="t-time">30 min</span>
-            </summary>
-            <div class="t-body">
-              <p>Painless light treatment that works well on its own or straight after a peel or microneedling.</p>
-              <ul><li>Soothes redness and breakouts</li><li>Speeds up recovery</li><li>No downtime</li></ul>
-            </div>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary>
-              <span class="t-name">Anti-wrinkle injections</span>
-              <span class="t-what">Softens expression lines on the forehead and eyes</span>
-              <span class="t-time">30 min</span>
-            </summary>
-            <div class="t-body">
-              <p>Small, precise doses that relax the muscles behind expression lines. The aim is for you to look rested, not frozen.</p>
-              <ul><li>Results appear over 7–14 days</li><li>Lasts around 3–4 months</li><li>Review appointment included</li></ul>
-            </div>
-          </details>
-        </li>
-        <li>
-          <details>
-            <summary>
-              <span class="t-name">Dermal fillers</span>
-              <span class="t-what">Restores volume to lips, cheeks and jawline</span>
-              <span class="t-time">45 min</span>
-            </summary>
-            <div class="t-body">
-              <p>Hyaluronic acid filler placed to balance proportions and replace lost volume. Always discussed in detail before we begin.</p>
-              <ul><li>Immediate, natural-looking results</li><li>Lasts 6–12 months depending on area</li><li>Possible swelling for a few days</li></ul>
-            </div>
-          </details>
+          <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 32V17l12-9 12 9v15Z"/><path d="M16 32v-8h8v8"/></svg>
+          <h3>קליניקה פרטית ואווירה נעימה</h3>
+          <p>קליניקה ביתית ושקטה באגמים, עם פרטיות, זמן ותשומת לב רק אלייך.</p>
         </li>
       </ul>
     </section>
 
-    <section class="visit" id="visit" aria-labelledby="visit-title">
-      <h2 id="visit-title">Your visit</h2>
-      <ol class="steps">
-        <li>
-          <h3>Consultation</h3>
-          <p>We talk about your skin, health and goals, and look closely at what's going on.</p>
-        </li>
-        <li>
-          <h3>A plan for you</h3>
-          <p>Tanya recommends treatments, explains what to expect and confirms the price. You decide.</p>
-        </li>
-        <li>
-          <h3>Treatment</h3>
-          <p>Done in a quiet private room, at your pace, with every step explained.</p>
-        </li>
-        <li>
-          <h3>Aftercare</h3>
-          <p>You leave with written aftercare and can message us on WhatsApp with any questions.</p>
-        </li>
-      </ol>
+    <!-- RESULTS -->
+    <section class="results section" id="results" aria-labelledby="results-title">
+      <div class="section-intro">
+        <h2 id="results-title">תוצאות טיפולים</h2>
+        <p>תמונות של לקוחות הקליניקה, כפי שפורסמו באינסטגרם של TB Cosmetology. לחצי על תמונה כדי להגדיל אותה.</p>
+      </div>
+
+      <div class="results-grid">
+        <figure class="result">
+          <button class="zoom" type="button" data-lightbox="results" data-full="assets/images/result-ipl-1-1320.jpg" aria-label="הגדלת התמונה: לפני ואחרי טיפול IPL אחד">
+            <picture>
+              <source type="image/webp" srcset="assets/images/result-ipl-1-720.webp 720w, assets/images/result-ipl-1-1320.webp 1320w" sizes="(min-width: 960px) 30vw, 100vw">
+              <img src="assets/images/result-ipl-1-720.jpg" alt="לפני ואחרי טיפול IPL אחד: תקריב של לחי ואזור העין" width="1320" height="1306" loading="lazy">
+            </picture>
+          </button>
+          <figcaption>לפני ואחרי טיפול IPL אחד</figcaption>
+        </figure>
+
+        <figure class="result">
+          <button class="zoom" type="button" data-lightbox="results" data-full="assets/images/result-ipl-2-1320.jpg" aria-label="הגדלת התמונה: לפני ואחרי טיפול IPL אחד, אזור הלחי">
+            <picture>
+              <source type="image/webp" srcset="assets/images/result-ipl-2-720.webp 720w, assets/images/result-ipl-2-1320.webp 1320w" sizes="(min-width: 960px) 30vw, 100vw">
+              <img src="assets/images/result-ipl-2-720.jpg" alt="לפני ואחרי טיפול IPL אחד: כתמים באזור הלחי" width="1320" height="1305" loading="lazy">
+            </picture>
+          </button>
+          <figcaption>לפני ואחרי טיפול IPL אחד</figcaption>
+        </figure>
+
+        <figure class="result">
+          <button class="zoom" type="button" data-lightbox="results" data-full="assets/images/result-acne-1320.jpg" aria-label="הגדלת התמונה: תחילת תהליך טיפול באקנה לעומת היום">
+            <picture>
+              <source type="image/webp" srcset="assets/images/result-acne-720.webp 720w, assets/images/result-acne-1320.webp 1320w" sizes="(min-width: 960px) 30vw, 100vw">
+              <img src="assets/images/result-acne-720.jpg" alt="תהליך טיפול באקנה: תחילת התהליך לעומת המצב היום" width="1320" height="1308" loading="lazy">
+            </picture>
+          </button>
+          <figcaption>טיפול באקנה: תחילת התהליך לעומת היום</figcaption>
+        </figure>
+      </div>
+      <p class="disclaimer">התוצאות משתנות מאדם לאדם, בהתאם למצב העור ולהקפדה על ההמלצות. התמונות אינן מהוות הבטחה לתוצאה זהה.</p>
     </section>
 
-    <!-- PLACEHOLDER REVIEWS: replace with real client reviews (with their permission) before going live. -->
-    <section class="reviews" id="reviews" aria-labelledby="reviews-title">
-      <h2 id="reviews-title">What clients say</h2>
-      <figure class="review review-lead">
-        <blockquote><p>“I came in nervous about injections and left feeling completely looked after. Tanya talked me out of half of what I thought I wanted, and I'm so glad she did.”</p></blockquote>
-        <figcaption>Client name, anti-wrinkle injections</figcaption>
-      </figure>
-      <figure class="review">
-        <blockquote><p>“My skin hasn't looked this even in years. The peel course was explained so clearly.”</p></blockquote>
-        <figcaption>Client name, chemical peel</figcaption>
-      </figure>
-      <figure class="review">
-        <blockquote><p>“Booking on WhatsApp was easy and the clinic is beautifully calm.”</p></blockquote>
-        <figcaption>Client name, signature facial</figcaption>
-      </figure>
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery" aria-labelledby="gallery-title">
+      <h2 id="gallery-title" class="gallery-title">הקליניקה</h2>
+      <div class="tiles">
+        <figure class="tile">
+          <button class="zoom" type="button" data-lightbox="gallery" data-full="assets/images/treatment-mask-1320.jpg" aria-label="הגדלת התמונה: טיפול פנים בקליניקה">
+            <picture>
+              <source type="image/webp" srcset="assets/images/treatment-mask-720.webp 720w, assets/images/treatment-mask-1320.webp 1320w" sizes="(min-width: 960px) 34vw, 85vw">
+              <img src="assets/images/treatment-mask-720.jpg" alt="טניה מורחת מסכה על פני לקוחה במהלך טיפול פנים" width="1320" height="1139" loading="lazy">
+            </picture>
+          </button>
+          <figcaption>טיפול פנים בחומרים מקצועיים</figcaption>
+        </figure>
+        <figure class="tile">
+          <button class="zoom" type="button" data-lightbox="gallery" data-full="assets/images/treatment-facial-1320.jpg" aria-label="הגדלת התמונה: יחס אישי בכל טיפול">
+            <picture>
+              <source type="image/webp" srcset="assets/images/treatment-facial-720.webp 720w, assets/images/treatment-facial-1320.webp 1306w" sizes="(min-width: 960px) 34vw, 85vw">
+              <img src="assets/images/treatment-facial-720.jpg" alt="טניה מטפלת בלקוחה בעדינות במהלך טיפול פנים" width="1306" height="1440" loading="lazy">
+            </picture>
+          </button>
+          <figcaption>יחס אישי בכל טיפול</figcaption>
+        </figure>
+        <figure class="tile">
+          <button class="zoom" type="button" data-lightbox="gallery" data-full="assets/images/tanya-clinic-1320.jpg" aria-label="הגדלת התמונה: טניה בקליניקה">
+            <picture>
+              <source type="image/webp" srcset="assets/images/tanya-clinic-720.webp 720w, assets/images/tanya-clinic-1320.webp 1320w" sizes="(min-width: 960px) 34vw, 85vw">
+              <img src="assets/images/tanya-clinic-720.jpg" alt="טניה בקאי בקליניקה" width="1320" height="1311" loading="lazy">
+            </picture>
+          </button>
+          <figcaption>קליניקה פרטית באגמים, נתניה</figcaption>
+        </figure>
+      </div>
     </section>
 
-    <!-- Contact details are placeholders: replace address, hours and phone. -->
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Visit the clinic</h2>
+    <!-- TESTIMONIALS -->
+    <section class="testimonials section" id="testimonials" aria-labelledby="testimonials-title">
+      <h2 id="testimonials-title">מה הלקוחות מספרות</h2>
+      <div class="testimonial-list" id="testimonial-list"></div>
+      <div class="testimonial-empty" id="testimonial-empty">
+        <p>תהליכים, תוצאות ותגובות של לקוחות מתפרסמים באינסטגרם של הקליניקה.</p>
+        <a class="btn btn-line js-instagram" href="https://www.instagram.com/tb.cosmetology/" target="_blank" rel="noopener">לאינסטגרם @tb.cosmetology</a>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="booking" id="booking" aria-labelledby="booking-title">
+      <div class="booking-banner">
+        <picture>
+          <source type="image/webp" srcset="assets/images/treatment-mask-720.webp 720w, assets/images/treatment-mask-1320.webp 1320w" sizes="100vw">
+          <img src="assets/images/treatment-mask-1320.jpg" alt="" width="1320" height="1139" loading="lazy">
+        </picture>
+        <div class="booking-banner-text">
+          <h2 id="booking-title">קביעת פגישת ייעוץ</h2>
+          <p>בוחרות נושא, יום ושעה, וטניה חוזרת אלייך עם אישור בוואטסאפ.</p>
+        </div>
+      </div>
+
+      <div class="booking-panel">
+        <form class="booking-form" id="booking-form" novalidate>
+          <fieldset class="step">
+            <legend><span class="step-no">1</span> על מה תרצי להתייעץ?</legend>
+            <div class="choices" id="topic-choices"></div>
+          </fieldset>
+
+          <fieldset class="step">
+            <legend><span class="step-no">2</span> באיזה יום?</legend>
+            <div class="date-strip" id="date-choices" role="radiogroup" aria-label="בחירת יום"></div>
+          </fieldset>
+
+          <fieldset class="step">
+            <legend><span class="step-no">3</span> <span id="time-legend">באיזו שעה נוח לך?</span></legend>
+            <p class="step-hint" id="time-hint">בחרי קודם יום.</p>
+            <div class="choices choices-inline" id="time-choices"></div>
+          </fieldset>
+
+          <fieldset class="step">
+            <legend><span class="step-no">4</span> הפרטים שלך</legend>
+            <div class="field">
+              <label for="f-name">שם מלא</label>
+              <input id="f-name" name="fullName" type="text" autocomplete="name" maxlength="80" required>
+            </div>
+            <div class="field">
+              <label for="f-phone">טלפון נייד</label>
+              <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" placeholder="050-000-0000" maxlength="16" required>
+            </div>
+            <div class="field">
+              <label for="f-note">הערה <span class="optional">(לא חובה)</span></label>
+              <textarea id="f-note" name="note" rows="3" maxlength="500"></textarea>
+            </div>
+            <!-- Honeypot field against bots: hidden from users -->
+            <div class="hp" aria-hidden="true">
+              <label for="f-website">אתר</label>
+              <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <label class="consent">
+              <input type="checkbox" name="consent" id="f-consent" required>
+              <span>אני מאשרת שטניה תשמור את הפרטים שלי ותיצור איתי קשר בטלפון ובוואטסאפ לגבי התור. <a href="privacy.html">מדיניות פרטיות</a></span>
+            </label>
+          </fieldset>
+
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+          <button class="btn btn-gold btn-wide" type="submit" id="submit-btn">שליחת בקשה לתור</button>
+          <p class="form-note">זו בקשה לתור. התור נקבע סופית רק אחרי שטניה מאשרת אותו.</p>
+        </form>
+
+        <div class="booking-done" id="booking-done" hidden tabindex="-1">
+          <span class="status-pill" id="done-status">ממתין לאישור</span>
+          <h3 id="done-title">הבקשה התקבלה</h3>
+          <p id="done-text">טניה תבדוק את היומן ותחזור אלייך בוואטסאפ עם אישור לתור. התור נקבע סופית רק אחרי האישור.</p>
+          <dl class="done-summary" id="done-summary"></dl>
+          <a class="btn btn-gold btn-wide" id="done-whatsapp" href="#" target="_blank" rel="noopener" hidden>שליחת הבקשה בוואטסאפ</a>
+          <button class="btn btn-line" type="button" id="done-again">שליחת בקשה נוספת</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">טניה בקאי – TB Cosmetology</h2>
       <div class="contact-grid">
-        <div>
-          <h3>Address</h3>
-          <address>Clinic street 1<br>City, postcode</address>
-          <a href="https://maps.google.com/?q=Tanya+Bekai+Clinic" target="_blank" rel="noopener">Open in Google Maps</a>
-        </div>
-        <div>
-          <h3>Opening hours</h3>
-          <dl class="hours">
-            <dt>Monday to Thursday</dt><dd>9:00–19:00</dd>
-            <dt>Friday</dt><dd>9:00–14:00</dd>
-            <dt>Saturday and Sunday</dt><dd>Closed</dd>
-          </dl>
-        </div>
-        <div>
-          <h3>Get in touch</h3>
-          <p><a href="tel:+10000000000">+1 000 000 0000</a></p>
-          <p><a class="js-whatsapp" href="https://wa.me/10000000000" target="_blank" rel="noopener">Message us on WhatsApp</a></p>
+        <dl class="contact-details">
+          <div><dt>כתובת</dt><dd class="js-address">שדרות האגמים 11, נתניה</dd></div>
+          <div><dt>טלפון</dt><dd><a class="js-phone" href="tel:+972546824499" dir="ltr">054-682-4499</a></dd></div>
+          <div><dt>אינסטגרם</dt><dd><a class="js-instagram" href="https://www.instagram.com/tb.cosmetology/" target="_blank" rel="noopener" dir="ltr">@tb.cosmetology</a></dd></div>
+          <div><dt>שעות פעילות</dt><dd class="js-hours">בתיאום מראש</dd></div>
+        </dl>
+        <div class="contact-actions">
+          <a class="btn btn-dark" href="tel:+972546824499">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1Z"/></svg>
+            התקשרי
+          </a>
+          <a class="btn btn-dark js-whatsapp" href="https://wa.me/972546824499" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11.4 11.4 0 0 1-4.5-4 5 5 0 0 1-1-2.7 2.9 2.9 0 0 1 .9-2.1 1 1 0 0 1 .7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.1.1.3 0 .5l-.3.4-.4.5c-.1.1-.3.3-.1.6a8 8 0 0 0 1.5 1.8 7.2 7.2 0 0 0 2.1 1.3c.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3a2.2 2.2 0 0 1-.1 1.3Z"/></svg>
+            וואטסאפ
+          </a>
+          <a class="btn btn-line js-maps" href="https://www.google.com/maps/search/?api=1&amp;query=%D7%A9%D7%93%D7%A8%D7%95%D7%AA%20%D7%94%D7%90%D7%92%D7%9E%D7%99%D7%9D%2011%20%D7%A0%D7%AA%D7%A0%D7%99%D7%94" target="_blank" rel="noopener">ניווט ב-Google Maps</a>
+          <a class="btn btn-line js-waze" href="https://waze.com/ul?q=%D7%A9%D7%93%D7%A8%D7%95%D7%AA%20%D7%94%D7%90%D7%92%D7%9E%D7%99%D7%9D%2011%20%D7%A0%D7%AA%D7%A0%D7%99%D7%94&amp;navigate=yes" target="_blank" rel="noopener">ניווט ב-Waze</a>
+          <a class="btn btn-line js-instagram" href="https://www.instagram.com/tb.cosmetology/" target="_blank" rel="noopener">לאינסטגרם</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p class="wordmark">Tanya Bekai</p>
-    <p>© <span id="year">2026</span> Tanya Bekai Aesthetics. All treatments are carried out after a consultation.</p>
+    <p class="lockup lockup-footer"><span class="lockup-main">TB COSMETOLOGY</span><span class="lockup-sub">TANYA BAKAI</span></p>
+    <p>© <span id="year">2026</span> טניה בקאי – TB Cosmetology. כל הזכויות שמורות.</p>
+    <p><a href="privacy.html">מדיניות פרטיות</a></p>
   </footer>
 
-  <script src="main.js"></script>
+  <a class="wa-float js-whatsapp-prefilled" href="https://wa.me/972546824499" target="_blank" rel="noopener" aria-label="שליחת הודעה לטניה בוואטסאפ">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7a11.4 11.4 0 0 1-4.5-4 5 5 0 0 1-1-2.7 2.9 2.9 0 0 1 .9-2.1 1 1 0 0 1 .7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.1.1.3 0 .5l-.3.4-.4.5c-.1.1-.3.3-.1.6a8 8 0 0 0 1.5 1.8 7.2 7.2 0 0 0 2.1 1.3c.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3a2.2 2.2 0 0 1-.1 1.3Z"/></svg>
+  </a>
+
+  <!-- Treatment details window -->
+  <dialog class="modal" id="details-modal" aria-labelledby="details-title">
+    <button class="modal-close" type="button" data-close aria-label="סגירה">×</button>
+    <h3 id="details-title"></h3>
+    <div id="details-body"></div>
+    <p class="modal-note">המחיר ומספר המפגשים נקבעים אחרי פגישת הייעוץ.</p>
+    <a class="btn btn-gold btn-wide" href="#booking" id="details-book">לקביעת ייעוץ</a>
+  </dialog>
+
+  <!-- Image zoom window -->
+  <dialog class="lightbox" id="lightbox" aria-label="תצוגת תמונה מוגדלת">
+    <button class="modal-close" type="button" data-close aria-label="סגירה">×</button>
+    <figure>
+      <img id="lightbox-img" src="" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <div class="lightbox-nav">
+      <button type="button" id="lightbox-prev" aria-label="התמונה הקודמת">›</button>
+      <button type="button" id="lightbox-next" aria-label="התמונה הבאה">‹</button>
+    </div>
+  </dialog>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/booking.js" defer></script>
 </body>
 </html>

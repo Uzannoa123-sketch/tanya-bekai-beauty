@@ -1,0 +1,11 @@
+{
+  "name": "tb-cosmetology",
+  "private": true,
+  "type": "module",
+  "description": "TB Cosmetology – website and booking system for Tanya Bakai's clinic",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "dev": "vercel dev"
+  }
+}
